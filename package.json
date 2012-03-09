@@ -1,7 +1,7 @@
 { 
   "name": "flaty", 
   "description": "Flaty is a method for condensing a multi-dimensional JSON like object into a single-dimensional object.", 
-  "version": "0.7", 
+  "version": "0.7.0", 
   "author": "six8", 
   "licenses":
     [{ 
