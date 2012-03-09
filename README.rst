@@ -5,6 +5,7 @@ Flaty
 Flaty is a method for condensing a multi-dimensional JSON like object into a single-dimensional object.
 
 Example::
+
   obj =
     name: 'foo'
     val: 'bar'
@@ -66,6 +67,7 @@ This also makes it easier to mix AJAX with forms::
   // Load form from AJAX get
   var data = flaty.flatten(json_response);
 
+  // Set form values
   for ( k in data ) {
     $('form input[name="' + k + '"]').val(data[k]);
   }
