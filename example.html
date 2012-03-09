@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Flaty Example</title>
+    <script type="text/javascript" src="lib/flaty.js"></script>
+  </head>
+  <body>
+    <h1>Flaty Example</h1>
+    <h2>A Javascript Object<h2>
+    <pre id="obj"></pre>
+    <h2>In Flaty form<h2>
+    <pre id="flaty"></pre>
+    <h2>And back again<h2>
+    <pre id="faty"></pre>
+
+
+    <script type="text/javascript">
+      var example = {
+        name: 'foo',
+        val: 'bar',
+        key1: 'test',
+        ary: [
+          'a', 'b', 'c', {
+            x: 1,
+            y: 3
+          }, [1, 2, 3]
+        ],
+        obj: {
+          t: 'a',
+          z: 'x',
+          nest: [1, 2, 3, 4],
+          us: {
+            texas: {
+              austin: 'Weird',
+              dallas: 'Cowboy'
+            }
+          }
+        }
+      };    
+
+      var flat = flaty.flatten(example)
+      document.getElementById('obj').innerHTML = JSON.stringify(example, undefined, 2)
+      document.getElementById('flaty').innerHTML = JSON.stringify(flat, undefined, 2)
+      document.getElementById('faty').innerHTML = JSON.stringify(flaty.fatten(flat), undefined, 2)
+    </script>    
+  </body>
+</html>  
