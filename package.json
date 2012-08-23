@@ -1,7 +1,7 @@
 { 
   "name": "flaty", 
   "description": "Flaty is a method for condensing a multi-dimensional JSON like object into a single-dimensional object.", 
-  "version": "0.7.0", 
+  "version": "0.7.1", 
   "author": "six8", 
   "licenses":
     [{ 
@@ -12,5 +12,14 @@
     "type" : "git", 
     "url": "http://github.com/six8/flaty-javascript.git"
   }, 
-  "main" : "./lib/flaty.js"
+  "main" : "./lib/flaty.js",
+  "scripts": {
+    "test": "jasmine-node --coffee spec"
+  },
+  "devDependencies": {
+    "coffee-script": ">=1.2.0",
+    "jasmine-node": ">=1.0.0",
+    "uglify-js": ">=1.0.0",
+    "flour": ">=0.2.1"
+  }
 }
