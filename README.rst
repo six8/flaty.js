@@ -2,8 +2,9 @@
 Flaty
 =====
 
-.. |BuildStatus| image:: https://secure.travis-ci.org/six8/flaty-javascript.png
-.. _BuildStatus: http://travis-ci.org/six8/flaty-javascript
+.. image:: https://secure.travis-ci.org/six8/flaty-javascript.png
+    :target: http://travis-ci.org/six8/flaty-javascript
+    :alt: Build Status
 
 Flaty is a method for condensing a multi-dimensional JSON like object into a single-dimensional object.
 
