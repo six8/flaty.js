@@ -1,11 +1,11 @@
-[![build status](https://secure.travis-ci.org/six8/flaty-javascript.png)](http://travis-ci.org/six8/flaty-javascript)
 =====
 Flaty
 =====
 
-Flaty is a method for condensing a multi-dimensional JSON like object into a single-dimensional object.
+.. |BuildStatus| image:: https://secure.travis-ci.org/six8/flaty-javascript.png
+.. _BuildStatus: http://travis-ci.org/six8/flaty-javascript
 
-[![build status](https://secure.travis-ci.org/six8/flaty-javascript.png)](http://travis-ci.org/six8/flaty-javascript)
+Flaty is a method for condensing a multi-dimensional JSON like object into a single-dimensional object.
 
 Example::
 
