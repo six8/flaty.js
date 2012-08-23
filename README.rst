@@ -4,6 +4,8 @@ Flaty
 
 Flaty is a method for condensing a multi-dimensional JSON like object into a single-dimensional object.
 
+[![build status](https://secure.travis-ci.org/six8/flaty-javascript.png)](http://travis-ci.org/six8/flaty-javascript)
+
 Example::
 
   obj =
@@ -125,6 +127,20 @@ Flaty is also convenient for URL queries::
   }
   */
 
+Development and Testing
+-----------------------
+
+Install node modules::
+
+  npm install .
+
+Run tests::
+
+  npm test
+
+Building uses `flour <https://github.com/ricardobeat/cake-flour>`_ which requires node.js >=0.8.7::
+
+  cake build
 
 
 

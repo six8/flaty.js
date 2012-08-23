@@ -79,7 +79,7 @@ tokenize = (str) ->
         # This is an array with an unspecified index
         return [INDEX, null, contains]
       else  
-        return [INDEX, parseInt(key), contains]
+        return [INDEX, parseInt(key, 10), contains]
     else 
       if key == ''
         throw 'Object property missing key.'
@@ -103,6 +103,8 @@ tokenize = (str) ->
 
 # Take a single dimension Flaty JSON object and restore it
 fatten = (obj) ->  
+  ###jshint expr:true###
+
   if not Array.isArray(obj)
     input = []
     for own kstr, value of obj
@@ -125,7 +127,7 @@ fatten = (obj) ->
         if keytype == INDEX and key is null
           store.push([])
           store = store[store.length-1]
-        else
+        else          
           store[key] or= []
           store = store[key]
       else if contains == OBJECT
@@ -138,6 +140,7 @@ fatten = (obj) ->
 
   return data
 
+###jshint eqnull:true###
 exports = exports ? this
 exports.flaty =
   flatten: flatten
