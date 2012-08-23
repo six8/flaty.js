@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/six8/flaty-javascript.png)](http://travis-ci.org/six8/flaty-javascript)
 =====
 Flaty
 =====
